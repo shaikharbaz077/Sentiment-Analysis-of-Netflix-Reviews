@@ -70,7 +70,7 @@ FLAGS = tf.app.flags.FLAGS
 
 
 def main(_):
-    
+    print('Start')
     with open(FLAGS.word2idx) as json_file:  
         word2idx = json.load(json_file)
 
@@ -116,7 +116,7 @@ def main(_):
             traininig_loss=0
             training_acc=0
             
-              
+            
             feed_dict={dropout_keep_prob:0.5}
             
            
