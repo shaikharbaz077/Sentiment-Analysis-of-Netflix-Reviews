@@ -141,7 +141,7 @@ class BaseModel:
             n_hidden=self.FLAGS.lstm_units
             
             if self.FLAGS.architecture=="bidirectional":
-                n_hidden=self.FLAGS.lstm_units*2
+                n_hidden=self.FLAGS.lstm_units*4
             
             W1=tf.get_variable('W1', shape=(n_hidden,self.FLAGS.num_classes)) 
             
